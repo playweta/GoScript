@@ -2,18 +2,80 @@ package main
 
 import (
 	"fmt"
-	WebV "request/webV"
+	"request/Path"
+	"request/file"
+	"request/proxy"
+	"request/webV"
+
+	"strings"
+	"sync"
+	"time"
 )
 
+var suitest = "https://faucet.testnet.sui.io/gas"
+
+var wg sync.WaitGroup
+var XMApi = "http://route.xiongmaodaili.com/xiongmao-web/api/glip?secret=146aed44a89ebe9bccae2c6f88e96100&orderNo=GL20221122120741Kiuw1U8x&count=1&isTxt=1&proxyType=1"
+
 func main() {
-	//resp, _ := http.Get("https://daohang.qq.com/?fr=hmpage")
-	//fmt.Println(resp)
-	x := WebV.RequestX{
-		Url:    "https://discord.com/api/v9/channels/973198791157104710/messages",
-		Submit: `{"content":"领不到水","nonce":"1043099472650829824","tts":false}`,
+	arr := getAddresses()
+	//arr := []string{"0xae9a613c93fbc6866f225a67f0a1d080f05c6782",
+	//	"0x8bf89ff885aa31f86896e43c819b1967d3a38cfe",
+	//	"0x00c1ee9e1f896dd4aa2bd9bd01711f48bce4d6ca",
+	//	"0x8103204b388fd077a0f6d27726bed3364daf8365",
+	//	"0x0b7eda03c083ae416adeb65c6f71e0b6bcdf94a8",
+	//}
+	araLen := len(arr)
+	for i := 0; i < araLen; i++ {
+		wg.Add(1)
+		go reqestFauct(arr[i])
+		if i%6 == 5 {
+			time.Sleep(time.Second * 5)
+		}
 	}
-	x.SetHeader("authorization: MTA0MjY3OTgwNTU1MzkzNDM1Ng.GZoi1G.VefG-jieOSqiWrYX0xMtV9Bg8p_4AOyx2XwR5g\ncontent-length: 68\ncontent-type: application/json\ncookie: __dcfduid=5afb1f70544f11edab1feb9f66ee5a80; __sdcfduid=5afb1f71544f11edab1feb9f66ee5a809627b4daf8829b4cd2af53c75b434e0b31d9a1da8b4a4deaca84c1ab63511786; __stripe_mid=afea82c9-dd31-40ff-aab7-d5f1a0efd5f582d4c6; __cfruid=46d080805a5fdd90b042d3e1d3bff1808f100f90-1668764309; __cf_bm=gUK2JnEVE5sVTZSd5kkj1JA34ZOGpqOuZ6gvoFksADI-1668764315-0-AQkEBfsgJG/7WeGZHLXazbUqbCeXHA6HGi02pRZBiyhFUYrSIv/GD/nqNlY5fKnUmDNpYyiot1l+AbFKdkbr38cEnxBKdT/SWaFilmzGuNHc8wC1F267lbsZqKZWIbbWjaNrDfzpDXWRfCBr8TH5H/Y=\norigin: https://discord.com\nreferer: https://discord.com/channels/973057323805311026/973198791157104710\nsec-ch-ua: \"Google Chrome\";v=\"107\", \"Chromium\";v=\"107\", \"Not=A?Brand\";v=\"24\"\nsec-ch-ua-mobile: ?0\nsec-ch-ua-platform: \"Windows\"\nsec-fetch-dest: empty\nsec-fetch-mode: cors\nsec-fetch-site: same-origin\nuser-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\nx-debug-options: bugReporterEnabled\nx-discord-locale: zh-CN\nx-super-properties: eyJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiQ2hyb21lIiwiZGV2aWNlIjoiIiwic3lzdGVtX2xvY2FsZSI6InpoLUNOIiwiYnJvd3Nlcl91c2VyX2FnZW50IjoiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzEwNy4wLjAuMCBTYWZhcmkvNTM3LjM2IiwiYnJvd3Nlcl92ZXJzaW9uIjoiMTA3LjAuMC4wIiwib3NfdmVyc2lvbiI6IjEwIiwicmVmZXJyZXIiOiJodHRwczovL3N1aS5pby8iLCJyZWZlcnJpbmdfZG9tYWluIjoic3VpLmlvIiwicmVmZXJyZXJfY3VycmVudCI6IiIsInJlZmVycmluZ19kb21haW5fY3VycmVudCI6IiIsInJlbGVhc2VfY2hhbm5lbCI6InN0YWJsZSIsImNsaWVudF9idWlsZF9udW1iZXIiOjE1ODE4MywiY2xpZW50X2V2ZW50X3NvdXJjZSI6bnVsbH0=")
-	//x.SetProxyAuth(proxy.GetAuth(orderno, secret))
-	x.SetProxyStr("127.0.0.1:7890")
-	fmt.Println(x.DoBodyToString())
+	wg.Wait()
+}
+func reqestFauct(account string) {
+	resp := webV.RequestX{
+		Url:    suitest,
+		Submit: `{"FixedAmountRequest":{"recipient":"` + account + `"}}`,
+	}
+	//resp.SetProxy("127.0.0.1:7890")
+	resp.SetHeader(`content-type: application/json
+origin: chrome-extension://opcgpfmipidbgpenhmajoajpbobppdil
+sec-ch-ua: "Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: none
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36`)
+	ip := proxy.GetIp(XMApi)
+	fmt.Println(account, ip)
+	resp.SetProxy(ip)
+	//resp.SetProxy(proxyServer)
+	//resp.SetProxyAuth(proxy.GetAuth(orderno, secret))
+	toString1 := resp.DoBodyToString()
+	resp.Do()
+
+	if strings.Index(toString1, "!DOCTYPE") != -1 {
+		fmt.Println("DOCTYPE")
+	} else {
+		fmt.Println(toString1)
+	}
+
+	wg.Done()
+}
+func getAddresses() []string {
+	path := Path.GetCurrentAbPathByCaller(1) + "/keys.txt"
+	readFile, _ := file.ReadFile(path)
+	addresses := strings.Split(string(readFile), "\n")
+	arr := make([]string, len(addresses), len(addresses))
+	for i := range addresses {
+		if len(addresses[i]) < 41 {
+			continue
+		}
+		arr[i] = addresses[i][:42]
+	}
+	return arr
 }

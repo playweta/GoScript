@@ -1,7 +1,7 @@
 package proxy
 
 import (
-	"request/WebV"
+	"request/webV"
 	"strings"
 	"sync"
 	"time"
@@ -11,7 +11,7 @@ var lock = sync.Mutex{}
 
 func GetIp(api string) string {
 	lock.Lock()
-	res := WebV.RequestX{
+	res := webV.RequestX{
 		Url: api,
 	}
 	ip := res.DoBodyToString()

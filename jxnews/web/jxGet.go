@@ -8,7 +8,7 @@ import (
 	"net/http"
 )
 
-var token string
+var Token string
 
 func Get(url string) []mode.Tm {
 	resp, err := http.Get(url)
@@ -22,12 +22,12 @@ func Get(url string) []mode.Tm {
 	}
 	var m mode.Mode
 	if err := json.Unmarshal(body, &m); err == nil {
-		fmt.Println(m.Code)
+		fmt.Println(m.Msg)
 	} else {
 		fmt.Println(err)
 	}
 	if m.Result.Jxtoken != "" {
-		token = m.Result.Jxtoken
+		Token = m.Result.Jxtoken
 	}
 	return m.Result.Tm
 }

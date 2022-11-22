@@ -1,6 +1,7 @@
 package mysql
 
 import (
+	"fmt"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/schema"
@@ -35,6 +36,15 @@ func init() {
 //	})
 //}
 
+// QueryQues 将答案拼凑成字符串
+func QueryQues(tms []mode.Tm) (answers string) {
+	for _, tm := range tms {
+		one := QueryOne(tm.Question)
+		answers = fmt.Sprintf(answers, "|", one.Answer)
+	}
+	return answers
+}
+
 // Query 查询全部
 func Query() (tms []mode.TM) {
 	DB.Find(&tms)
@@ -54,6 +64,8 @@ func QueryOne(question string) (tmQuery mode.TM) {
 func Add(tmAdd mode.TM) {
 	one := QueryOne(tmAdd.Question)
 	if one.Question == "" && one.Answer == "" {
-		DB.Create(&tmAdd) // 添加
+		if tmAdd.Question != "" && tmAdd.Answer != "" {
+			DB.Create(&tmAdd) // 添加
+		}
 	}
 }
