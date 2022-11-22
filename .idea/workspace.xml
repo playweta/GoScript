@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c0d8a1d-d777-4cdb-aa35-19eb24c49143" name="Changes" comment="jxnew实现实例化json">
-      <change afterPath="$PROJECT_DIR$/jxnews/mysql/mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GoScript.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GoScript.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jxnews/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/jxnews/go.mod" afterDir="false" />
+    <list default="true" id="8c0d8a1d-d777-4cdb-aa35-19eb24c49143" name="Changes" comment="jxnew实现数据库连接">
       <change beforePath="$PROJECT_DIR$/jxnews/test/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/jxnews/test/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxnews/web/webX.go" beforeDir="false" afterPath="$PROJECT_DIR$/jxnews/web/webX.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +118,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jxnew实现实例化json" />
-    <option name="LAST_COMMIT_MESSAGE" value="jxnew实现实例化json" />
+    <MESSAGE value="jxnew实现数据库连接" />
+    <option name="LAST_COMMIT_MESSAGE" value="jxnew实现数据库连接" />
   </component>
   <component name="VgoProject">
     <environment>
