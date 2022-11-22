@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c0d8a1d-d777-4cdb-aa35-19eb24c49143" name="Changes" comment="jxnew分割web">
+    <list default="true" id="8c0d8a1d-d777-4cdb-aa35-19eb24c49143" name="Changes" comment="jxnew-dev-0.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jxnews/mysql/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/jxnews/mysql/mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jxnews/test/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/jxnews/test/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jxnews/web/jxGet.go" beforeDir="false" afterPath="$PROJECT_DIR$/jxnews/web/jxGet.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jxnews/web/jxPost.go" beforeDir="false" afterPath="$PROJECT_DIR$/jxnews/web/jxPost.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jxnews/web/webX.go" beforeDir="false" afterPath="$PROJECT_DIR$/jxnews/web/webX.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiao16/proxy/proxy.go" beforeDir="false" afterPath="$PROJECT_DIR$/xiao16/proxy/proxy.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiao16/test/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/xiao16/test/test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiao16/webV/webV.go" beforeDir="false" afterPath="$PROJECT_DIR$/xiao16/webV/webV.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiao16/test/keys.txt" beforeDir="false" afterPath="$PROJECT_DIR$/xiao16/test/keys.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="WARN_ABOUT_CRLF" value="false" />
     <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/xiao16/test/keys.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="2HnaYNzicfx902yS3JIrEkfoXDS" />
   <component name="ProjectViewState">
@@ -65,7 +61,7 @@
       <recent name="E:\IDEA\GO_project\GoScript\jxnews\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
+  <component name="RunManager" selected="Go Build.go build test.go">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GoScript" />
       <working_directory value="$PROJECT_DIR$/jxnews" />
@@ -73,6 +69,24 @@
       <package value="GoScript" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/jxnews/test/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build request/test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GoScript" />
+      <working_directory value="$PROJECT_DIR$/xiao16" />
+      <kind value="PACKAGE" />
+      <package value="request/test" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/xiao16/test/test.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GoScript" />
+      <working_directory value="$PROJECT_DIR$/xiao16" />
+      <kind value="FILE" />
+      <package value="GoScript" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/xiao16/test/test.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build webX.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -85,11 +99,15 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Go Build.go build test.go" />
+      <item itemvalue="Go Build.go build request/test" />
       <item itemvalue="Go Build.go build webX.go" />
       <item itemvalue="Go Build.go build main.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build test.go" />
+        <item itemvalue="Go Build.go build request/test" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build webX.go" />
       </list>
@@ -126,7 +144,8 @@
     <MESSAGE value="jxnew实现实例化json" />
     <MESSAGE value="jxnew实现数据库连接" />
     <MESSAGE value="jxnew分割web" />
-    <option name="LAST_COMMIT_MESSAGE" value="jxnew分割web" />
+    <MESSAGE value="jxnew-dev-0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="jxnew-dev-0.1" />
   </component>
   <component name="VgoProject">
     <environment>
@@ -143,11 +162,6 @@
           <url>file://$PROJECT_DIR$/jxnews/test/main.go</url>
           <line>10</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/jxnews/web/webX.go</url>
-          <line>35</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
