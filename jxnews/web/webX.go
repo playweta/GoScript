@@ -8,7 +8,7 @@ import (
 )
 
 var t = "https://wxc.jxnews.com.cn/Weixin/Answertzbershida/"               // 地址
-var cip = "223.104.170.128"                                                // ip
+var cip = "222.104.171.128"                                                // ip
 var institution = "%E5%8D%97%E6%98%8C%E8%81%8C%E4%B8%9A%E5%A4%A7%E5%AD%A6" // 学校 // 答案
 var getArr []mode.Tm
 
@@ -34,14 +34,14 @@ func WebX() {
 
 	// 创建一个一个定时器
 	fmt.Println("定时器开始")
-	myT := time.NewTimer(17.77200 * 1000 * 1000 * 1000) // 设置7秒后执行一次
+	myT := time.NewTimer(17.6554 * 1000 * 1000 * 1000) // 设置7秒后执行一次
 	<-myT.C
 	fmt.Println(" 18 s 时间到 ", time.Now().Unix())
 
 	answers := Post(urlPost)
-	for i := 0; i < 20; i++ {
-		fmt.Println(answers[i], getArr[i].Question)
-	}
+	//for i := 0; i < 20; i++ {
+	//	fmt.Println(answers[i], getArr[i].Question)
+	//}
 
 	for i := 0; i < 20; i++ {
 		my.Add(mode.TM{
