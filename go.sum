@@ -1,5 +1,7 @@
 github.com/hybridgroup/mjpeg v0.0.0-20140228234708-4680f319790e h1:xCcwD5FOXul+j1dn8xD16nbrhJkkum/Cn+jTd/u1LhY=
 github.com/hybridgroup/mjpeg v0.0.0-20140228234708-4680f319790e/go.mod h1:eagM805MRKrioHYuU7iKLUyFPVKqVV6um5DAvCkUtXs=
+github.com/oopsguy/m3u8 v0.0.0-20190630112258-4150e93ec8f4 h1:VvytUbszpyAdKmKvd3LxvrFYFljp0wSmMOQHtIyOAuU=
+github.com/oopsguy/m3u8 v0.0.0-20190630112258-4150e93ec8f4/go.mod h1:crRh84w9dfuOcPGJd/K6Go8JlLUCuumIMAWDg6UrHsg=
 github.com/pascaldekloe/goe v0.1.0 h1:cBOtyMzM9HTpWjXfbbunk26uA6nG3a8n06Wieeh0MwY=
 github.com/pascaldekloe/goe v0.1.0/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=
 gocv.io/x/gocv v0.31.0 h1:BHDtK8v+YPvoSPQTTiZB2fM/7BLg6511JqkruY2z6LQ=

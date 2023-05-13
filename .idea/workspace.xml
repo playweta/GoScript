@@ -4,27 +4,22 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c0d8a1d-d777-4cdb-aa35-19eb24c49143" name="Changes" comment="keys">
-      <change afterPath="$PROJECT_DIR$/jxnews_hs/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jxnews_hs/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jxnews_hs/mode/mode.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jxnews_hs/mode/mode_mysql.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jxnews_hs/mode/mode_post.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jxnews_hs/mysql/mysql.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jxnews_hs/test/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jxnews_hs/web/jxGet.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jxnews_hs/web/jxPost.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jxnews_hs/web/webX.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jxnews_hs/webV/webV.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8c0d8a1d-d777-4cdb-aa35-19eb24c49143" name="Changes" comment="opcvs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jxnews/web/webX.go" beforeDir="false" afterPath="$PROJECT_DIR$/jxnews/web/webX.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jxnews_hs/web/webX.go" beforeDir="false" afterPath="$PROJECT_DIR$/jxnews_hs/web/webX.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,6 +34,9 @@
     <option name="WARN_ABOUT_CRLF" value="false" />
     <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/xiao16/test/keys.txt" root0="SKIP_INSPECTION" />
   </component>
@@ -48,28 +46,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;configurable..is.expanded&quot;: &quot;false&quot;,
-    &quot;configurable.GoLibrariesConfigurable.is.expanded&quot;: &quot;true&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IDEA/GO_project/GoScript&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "E:/IDEA/GO_project/GoScript",
+    "ts.external.directory.path": "F:\\GoLand 2022.2.4\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IDEA\GO_project\GoScript" />
+      <recent name="E:\IDEA\GO_project\GoScript\tm_vido" />
       <recent name="E:\IDEA\GO_project\GoScript\opcvs" />
       <recent name="E:\IDEA\GO_project\GoScript\jxnews" />
     </key>
@@ -79,70 +75,72 @@
       <recent name="E:\IDEA\GO_project\GoScript\jxnews\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (4)">
-    <configuration name="go build blur.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build main.go">
+    <configuration name="go build m3u8-downloader.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GoScript" />
-      <working_directory value="$PROJECT_DIR$/cvscope/cvscope" />
+      <working_directory value="$PROJECT_DIR$/m3u8-downloader" />
       <kind value="FILE" />
       <package value="GoScript" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/cvscope/cvscope/cmd/blur.go" />
+      <filePath value="$PROJECT_DIR$/m3u8-downloader/m3u8-downloader.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GoScript" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/tm_vido" />
       <kind value="FILE" />
       <package value="GoScript" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/opcvs/version/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main.go (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="GoScript" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="GoScript" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/opcvs/xphoto/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main.go (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="GoScript" />
-      <working_directory value="$PROJECT_DIR$/jxnews_hs" />
-      <kind value="FILE" />
-      <package value="GoScript" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/jxnews_hs/test/main.go" />
+      <filePath value="$PROJECT_DIR$/tm_vido/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="GoScript" />
-      <working_directory value="$PROJECT_DIR$/cvscope/cvscope" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <package value="GoScript" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/cvscope/cvscope/main.go" />
+      <filePath value="$PROJECT_DIR$/m3u8-master/main.go" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Go Build.go build main.go (4)" />
-      <item itemvalue="Go Build.go build blur.go" />
-      <item itemvalue="Go Build.go build main.go (2)" />
-      <item itemvalue="Go Build.go build main.go (3)" />
-      <item itemvalue="Go Build.go build main.go" />
-    </list>
+    <configuration name="go build tm_vido" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GoScript" />
+      <working_directory value="$PROJECT_DIR$/tm_vido" />
+      <kind value="PACKAGE" />
+      <package value="tm_vido" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/tm_vido/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build webX.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="GoScript" />
+      <working_directory value="$PROJECT_DIR$/jxnews_hs" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/jxnews_hs/web/webX.go" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go (4)" />
-        <item itemvalue="Go Build.go build blur.go" />
         <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Build.go build main.go (3)" />
-        <item itemvalue="Go Build.go build main.go (2)" />
+        <item itemvalue="Go Build.go build m3u8-downloader.go" />
+        <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Build.go build tm_vido" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1683796992047</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683796992047</updated>
+      <workItem from="1683796995320" duration="39000" />
+      <workItem from="1683797088838" duration="109000" />
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
@@ -157,7 +155,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="main/main" />
                       </list>
                     </value>
                   </entry>
@@ -175,7 +173,11 @@
     <MESSAGE value="jxnew分割web" />
     <MESSAGE value="jxnew-dev-0.1" />
     <MESSAGE value="keys" />
-    <option name="LAST_COMMIT_MESSAGE" value="keys" />
+    <MESSAGE value="opcv" />
+    <MESSAGE value="修改参数" />
+    <MESSAGE value="jxnews_hs_dev1.0" />
+    <MESSAGE value="opcvs" />
+    <option name="LAST_COMMIT_MESSAGE" value="opcvs" />
   </component>
   <component name="VgoProject">
     <environment>
@@ -186,6 +188,15 @@
     <settings-migrated>true</settings-migrated>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/tm_vido/main.go</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="GoApplicationRunConfiguration">
         <watch expression="*(*&quot;[]string&quot;)(824636178568)" />
